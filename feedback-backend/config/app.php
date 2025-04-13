@@ -104,6 +104,10 @@ return [
             explode(',', env('APP_PREVIOUS_KEYS', ''))
         ),
     ],
+//     'providers' => [
+    
+//     App\Providers\RouteServiceProvider::class,
+// ],
 
     /*
     |--------------------------------------------------------------------------
