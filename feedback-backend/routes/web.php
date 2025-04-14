@@ -7,5 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/feedback', [FeedbackController::class, 'index']);
-Route::post('/feedback', [FeedbackController::class, 'store']);
+Route::prefix('api')->group(function () {
+    Route::get('/feedback', [FeedbackController::class, 'index']);
+    Route::post('/feedback', [FeedbackController::class, 'store']);
+});
